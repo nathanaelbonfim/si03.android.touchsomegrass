@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TouchSomeGrass">
         <activity
+            android:name=".Break"
+            android:exported="false"
+            android:label="@string/title_activity_break"
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
+        <activity
+            android:name=".Timer"
+            android:exported="false"
+            android:label="@string/title_activity_timer"
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
+        <activity
             android:name=".Configuration"
             android:exported="false"
             android:label="@string/title_activity_configuration"
@@ -29,7 +44,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TouchSomeGrass.NoActionBar"></activity>
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
     </application>
 
 </manifest>
