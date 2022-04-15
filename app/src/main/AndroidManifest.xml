@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.touchsomegrass" >
+    package="com.example.touchsomegrass">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TouchSomeGrass" >
+        android:theme="@style/Theme.TouchSomeGrass">
+        <activity
+            android:name=".Configuration"
+            android:exported="false"
+            android:label="@string/title_activity_configuration"
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
         <activity
             android:name=".Presentation"
             android:exported="true"
@@ -24,8 +29,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TouchSomeGrass.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.TouchSomeGrass.NoActionBar"></activity>
     </application>
 
 </manifest>
