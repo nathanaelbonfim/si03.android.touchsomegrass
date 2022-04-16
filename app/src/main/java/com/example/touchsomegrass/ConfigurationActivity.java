@@ -13,23 +13,23 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.touchsomegrass.databinding.ActivityAboutBinding;
+import com.example.touchsomegrass.databinding.ActivityConfigurationBinding;
 
-public class About extends AppCompatActivity {
+public class ConfigurationActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityAboutBinding binding;
+    private ActivityConfigurationBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityAboutBinding.inflate(getLayoutInflater());
+        binding = ActivityConfigurationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_about);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_configuration);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
@@ -44,7 +44,7 @@ public class About extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_about);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_configuration);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
