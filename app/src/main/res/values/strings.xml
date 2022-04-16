@@ -14,6 +14,7 @@
     <string name="title_activity_timer">Timer</string>
     <string name="title_activity_about">About</string>
     <string name="title_activity_break">Break</string>
-    <string name="presentation_introduction">Você passa tempo demais sentado nessa cadeira, vá encostar na grama!\n\nNosso app te ajuda nessa tarefa definindo um lembrete para você tirar a bunda da cadeira e dar uma \"esticada\"</string>
+    <string name="presentation_introduction">Você passa tempo demais sentado nessa cadeira, vá encostar na grama!\n\nNosso app te ajuda nessa tarefa definindo um lembrete para você tirar a bunda da cadeira e dar uma \"esticada\".</string>
     <string name="presentation_button">Estou pronto!</string>
+    <string name="presentation_title">Apresentação</string>
 </resources>

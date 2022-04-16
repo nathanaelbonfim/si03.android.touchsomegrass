@@ -11,6 +11,7 @@
         android:theme="@style/Theme.TouchSomeGrass" >
         <activity
             android:name=".Presentation"
+            android:label="@string/presentation_title"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
