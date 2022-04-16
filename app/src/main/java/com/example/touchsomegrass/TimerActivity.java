@@ -15,7 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.touchsomegrass.databinding.ActivityTimerBinding;
 
-public class Timer extends AppCompatActivity {
+public class TimerActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityTimerBinding binding;

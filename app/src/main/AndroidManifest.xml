@@ -10,27 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TouchSomeGrass">
         <activity
-            android:name=".Break"
+            android:name=".BreakActivity"
             android:exported="false"
             android:label="@string/title_activity_break"
             android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
         <activity
-            android:name=".About"
+            android:name=".AboutActivity"
             android:exported="false"
             android:label="@string/title_activity_about"
             android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
         <activity
-            android:name=".Timer"
+            android:name=".TimerActivity"
             android:exported="false"
             android:label="@string/title_activity_timer"
             android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
         <activity
-            android:name=".Configuration"
+            android:name=".ConfigurationActivity"
             android:exported="false"
             android:label="@string/title_activity_configuration"
             android:theme="@style/Theme.TouchSomeGrass.NoActionBar" />
         <activity
-            android:name=".Presentation"
+            android:name=".PresentationActivity"
             android:exported="true"
             android:label="@string/title_activity_presentation"
             android:theme="@style/Theme.TouchSomeGrass.NoActionBar">
