@@ -13,14 +13,14 @@ import com.example.touchsomegrass.databinding.ActivityPresentationBinding;
 public class Presentation extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-private ActivityPresentationBinding binding;
+    private ActivityPresentationBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     binding = ActivityPresentationBinding.inflate(getLayoutInflater());
-     setContentView(binding.getRoot());
+        binding = ActivityPresentationBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         setSupportActionBar(binding.toolbar);
 
