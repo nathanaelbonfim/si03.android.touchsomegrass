@@ -17,4 +17,7 @@
     <string name="presentation_introduction">Você passa tempo demais sentado nessa cadeira, vá encostar na grama!\n\nNosso app te ajuda nessa tarefa definindo um lembrete para você tirar a bunda da cadeira e dar uma \"esticada\".</string>
     <string name="presentation_button">Estou pronto!</string>
     <string name="presentation_title">Apresentação</string>
+    <string name="configuration_title">Configurações</string>
+    <string name="configuration_name_label">Nome</string>
+    <string name="configuration_message_label">Mensagem</string>
 </resources>

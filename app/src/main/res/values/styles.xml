@@ -6,4 +6,16 @@
         >
         <item name="backgroundTint">@color/accent</item>
     </style>
+
+    <style
+        name="input_text"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <item name="android:layout_marginBottom">@dimen/element_gap</item>
+        <item name="boxBackgroundColor">@color/primary</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="boxStrokeColor">@color/accent</item>
+        <item name="hintTextColor">@color/accent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>
