@@ -41,4 +41,10 @@ public class TimerPresenter implements TimerContract.TimerPresenter {
     public void setView(TimerContract.TimerView view) {
         this.view = view;
     }
+
+    @Override
+    public boolean verifyFields() {
+        boolean isCorrect = this.timer.getInterval() != 0 && this.timer.getTimeToActive() != 0 && this.timer.getName() != null;
+        return isCorrect;
+    }
 }

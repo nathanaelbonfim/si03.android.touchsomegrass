@@ -3,6 +3,7 @@ package presenters;
 public interface TimerContract {
     interface TimerView {
         void showError(String error);
+        void showSucesss() throws Exception;
     }
 
     interface TimerPresenter {
@@ -12,5 +13,6 @@ public interface TimerContract {
         public void setTimeToActive(int timeToActive);
         public void getListFieldsSelect(String field);
         public void setView(TimerView view);
+        public boolean verifyFields();
     }
 }

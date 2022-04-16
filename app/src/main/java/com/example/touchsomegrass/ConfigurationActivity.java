@@ -16,6 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.touchsomegrass.databinding.ActivityConfigurationBinding;
 
 import presenters.TimerContract;
+import presenters.TimerPresenter;
 
 public class ConfigurationActivity extends AppCompatActivity implements TimerContract.TimerView {
 
@@ -25,7 +26,8 @@ public class ConfigurationActivity extends AppCompatActivity implements TimerCon
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        TimerContract.TimerPresenter timerPresenter = new TimerPresenter();
+        timerPresenter.setView(this);
         binding = ActivityConfigurationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -51,9 +53,15 @@ public class ConfigurationActivity extends AppCompatActivity implements TimerCon
                 || super.onSupportNavigateUp();
     }
 
-
     @Override
     public void showError(String error) {
         //TODO: Implementar show error
     }
+
+    @Override
+    public void showSucesss() throws Exception {
+        throw new Exception("Not implemented");
+        //TODO: Implementar show success
+    }
+
 }

@@ -10,17 +10,14 @@ public class Timer {
     private String name;
     public static final Map<Integer, Integer> IntervalOptions = new HashMap<Integer, Integer>();
     public static final Map<Integer, Integer> TimeToActiveOptions = new HashMap<Integer, Integer>();
+    public Timer() {
+        this.setIntervalOptions();
+    }
+
     public String getMessage() {
         return this.message;
     }
 
-    public Timer(String message, int interval, int timeToActive) {
-        this.message = message;
-        this.interval = interval;
-        this.timeToActive = timeToActive;
-        this.message = message;
-        this.setIntervalOptions();
-    }
 
     public void setMessage(String message) {
         this.message = message;
