@@ -15,7 +15,9 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.touchsomegrass.databinding.ActivityConfigurationBinding;
 
-public class ConfigurationActivity extends AppCompatActivity {
+import presenters.TimerContract;
+
+public class ConfigurationActivity extends AppCompatActivity implements TimerContract.TimerView {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityConfigurationBinding binding;
@@ -47,5 +49,11 @@ public class ConfigurationActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_configuration);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+
+    @Override
+    public void showError(String error) {
+        //TODO: Implementar show error
     }
 }
