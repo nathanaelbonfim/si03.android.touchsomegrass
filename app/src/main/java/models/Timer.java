@@ -39,10 +39,10 @@ public class Timer {
     private String name;
 
 
-    public Time(String message, int interval, int timeToactive, String message) {
+    public Timer(String message, int interval, int timeToActive) {
         this.message = message;
         this.interval = interval;
-        this.timeToActive = timeToactive;
+        this.timeToActive = timeToActive;
         this.message = message;
     }
 

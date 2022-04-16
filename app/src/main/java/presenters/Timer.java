@@ -1,6 +1,6 @@
 package presenters;
 
 public interface Timer {
-    public int setValue(int value);
-    public int getRestain();
+    public void setInitialValues(String args[]);
+    public void getListFieldsSelect(String field);
 }
