@@ -2,8 +2,8 @@ package presenters;
 
 import models.Timer;
 
-public class TimerPresenter implements TimerContract.TimerPresenter {
-    private TimerContract.TimerView view;
+public class ConfigurationPresenter implements ConfigurationContract.ConfigurationPresenter {
+    private ConfigurationContract.ConfigurationView view;
     private Timer timer;
 
 
@@ -37,7 +37,7 @@ public class TimerPresenter implements TimerContract.TimerPresenter {
     }
 
     @Override
-    public void setView(TimerContract.TimerView view) {
+    public void setView(ConfigurationContract.ConfigurationView view) {
         this.view = view;
     }
 
