@@ -12,7 +12,6 @@ public class TimerPresenter implements TimerContract.TimerPresenter {
         if (message.length() > 12) {
             this.view.showError("Mensagem grande demais");
         }
-        this.timer.setMessage(message);
     }
 
     @Override

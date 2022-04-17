@@ -23,6 +23,7 @@ public class Configuration extends AppCompatActivity implements TimerContract.Ti
         TimerContract.TimerPresenter timerPresenter = new TimerPresenter();
         timerPresenter.setView(this);
         setContentView(R.layout.activity_configuration);
+        TextInputLayout layoutName = findViewById(R.id.configuration_name);
         EditText inputName = findViewById(R.id.input_name);
         EditText inputMessage = findViewById(R.id.input_message);
         EditText inputInterval = findViewById(R.id.input_interval);
@@ -90,7 +91,6 @@ public class Configuration extends AppCompatActivity implements TimerContract.Ti
 
     @Override
     public void showError(String error) {
-
     }
 
     @Override
