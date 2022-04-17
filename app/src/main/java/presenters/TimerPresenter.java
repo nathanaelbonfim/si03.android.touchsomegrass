@@ -23,13 +23,13 @@ public class TimerPresenter implements TimerContract.TimerPresenter {
     }
 
     @Override
-    public void setInterval(int interval) {
-        this.timer.setInterval(interval);
+    public void setInterval(String interval) {
+        this.timer.setInterval(Integer.parseInt(interval));
     }
 
     @Override
-    public void setTimeToActive(int timeToActive) {
-        this.timer.setTimeToActive(timeToActive);
+    public void setTimeToActive(String timeToActive) {
+        this.timer.setTimeToActive(Integer.parseInt(timeToActive));
     }
 
     @Override

@@ -12,19 +12,89 @@ import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-public class Configuration extends AppCompatActivity {
+import presenters.TimerContract;
+import presenters.TimerPresenter;
+
+public class Configuration extends AppCompatActivity implements TimerContract.TimerView {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TimerContract.TimerPresenter timerPresenter = new TimerPresenter();
+        timerPresenter.setView(this);
         setContentView(R.layout.activity_configuration);
-        TextInputLayout inputName = findViewById(R.id.configuration_name);
-        TextInputLayout inputMessage = findViewById(R.id.configuration_message);
-        inputName.addOnEditTextAttachedListener(new TextInputLayout.OnEditTextAttachedListener() {
+        EditText inputName = findViewById(R.id.input_name);
+        EditText inputMessage = findViewById(R.id.input_message);
+        EditText inputInterval = findViewById(R.id.input_interval);
+        EditText inputTimeToActive = findViewById(R.id.input_break);
+        inputName.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onEditTextAttached(@NonNull TextInputLayout textInputLayout) {
-                Log.i("Configuration", "changes");
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                Log.i("Configuration", "" + s);
+                timerPresenter.setName(s.toString());
             }
         });
+        inputMessage.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                timerPresenter.setMessage(s.toString());
+            }
+        });
+        inputInterval.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                timerPresenter.setInterval(s.toString());
+            }
+        });
+        inputTimeToActive.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                timerPresenter.setMessage(s.toString());
+            }
+        });
+    }
+
+    @Override
+    public void showError(String error) {
+
+    }
+
+    @Override
+    public void showSucesss() throws Exception {
+
     }
 }

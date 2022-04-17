@@ -24,6 +24,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/input_name"
                 style="@style/input_text"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -38,6 +39,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/input_message"
                 style="@style/input_text"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -50,6 +52,7 @@
             android:hint="@string/configuration_interval_label">
 
             <AutoCompleteTextView
+                android:id="@+id/input_interval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
@@ -67,6 +70,7 @@
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/input_break"
                 android:inputType="none"
                 style="@style/input_dropdown"
                 />
