@@ -41,6 +41,50 @@
                 style="@style/input_text"
                 />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/configuration_interval"
+            style="@style/input_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/configuration_interval_label">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                style="@style/input_dropdown"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/configuration_break"
+            style="@style/input_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/configuration_break_label">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                style="@style/input_dropdown"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/presentation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/configuration_save_button"
+            android:onClick="saveConfigs"
+            style="@style/button_primary"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

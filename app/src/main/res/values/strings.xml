@@ -1,23 +1,28 @@
 <resources>
     <string name="app_name">TouchSomeGrass</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_presentation">Presentation</string>
-    <string name="title_activity_configuration">Configuration</string>
-    <string name="title_activity_timer">Timer</string>
-    <string name="title_activity_about">About</string>
-    <string name="title_activity_break">Break</string>
+    <!-- Títulos das activities -->
+    <string name="activity_presentation_title">Apresentação</string>
+    <string name="activity_configuration_title">Configurações</string>
+    <string name="activity_timer_title">Temporizador</string>
+    <string name="activity_break_title">Pausa</string>
+    <string name="activity_about_title">Sobre</string>
+
+    <!-- Activity Presentation-->
     <string name="presentation_introduction">Você passa tempo demais sentado nessa cadeira, vá encostar na grama!\n\nNosso app te ajuda nessa tarefa definindo um lembrete para você tirar a bunda da cadeira e dar uma \"esticada\".</string>
     <string name="presentation_button">Estou pronto!</string>
-    <string name="presentation_title">Apresentação</string>
-    <string name="configuration_title">Configurações</string>
+
+    <!-- Activity Configuration-->
     <string name="configuration_name_label">Nome</string>
     <string name="configuration_message_label">Mensagem</string>
+    <string name="configuration_interval_label">Trabalhar por</string>
+    <string name="configuration_break_label">Ficar de pé por</string>
+    <string name="configuration_save_button">Salvar</string>
+
+
+    <string name="configuration_interval_5">5 minutos</string>
+    <string name="configuration_interval_10">10 minutos</string>
+    <string name="configuration_interval_15">15 minutos</string>
+    <string name="configuration_interval_30">30 minutos</string>
+    <string name="configuration_interval_60">1 hora</string>
 </resources>

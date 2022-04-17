@@ -11,12 +11,12 @@
         android:theme="@style/Theme.TouchSomeGrass">
         <activity
             android:name=".Configuration"
-            android:label="@string/configuration_title"
+            android:label="@string/activity_configuration_title"
             android:exported="false" />
         <activity
             android:name=".Presentation"
             android:exported="true"
-            android:label="@string/presentation_title">
+            android:label="@string/activity_presentation_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

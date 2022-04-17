@@ -18,4 +18,17 @@
         <item name="hintTextColor">@color/accent</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
+    <style
+        name="input_dropdown"
+        parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <item name="android:layout_marginBottom">@dimen/element_gap</item>
+        <item name="boxBackgroundColor">@color/primary</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="endIconTint">@color/accent</item>
+        <item name="boxStrokeColor">@color/accent</item>
+        <item name="hintTextColor">@color/accent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

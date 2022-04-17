@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.touchsomegrass.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/menu_activity_presentation"
+        android:title="@string/activity_presentation_title" />
+    <item
+        android:id="@+id/menu_activity_configuration"
+        android:title="@string/activity_configuration_title" />
+    <item
+        android:id="@+id/menu_activity_timer"
+        android:title="@string/activity_timer_title" />
+    <item
+        android:id="@+id/menu_activity_break"
+        android:title="@string/activity_break_title" />
+    <item
+        android:id="@+id/menu_activity_about"
+        android:title="@string/activity_about_title" />
 </menu>
