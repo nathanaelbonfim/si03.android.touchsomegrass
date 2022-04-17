@@ -16,12 +16,12 @@ import presenters.TimerContract;
 import presenters.TimerPresenter;
 
 public class Configuration extends AppCompatActivity implements TimerContract.TimerView {
-
+    private TimerContract.TimerPresenter timerPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TimerContract.TimerPresenter timerPresenter = new TimerPresenter();
-        timerPresenter.setView(this);
+        this.timerPresenter = new TimerPresenter();
+        this.timerPresenter.setView(this);
         setContentView(R.layout.activity_configuration);
         TextInputLayout layoutName = findViewById(R.id.configuration_name);
         EditText inputName = findViewById(R.id.input_name);
@@ -95,6 +95,11 @@ public class Configuration extends AppCompatActivity implements TimerContract.Ti
 
     @Override
     public void showSucesss() throws Exception {
+    }
 
+    public void saveConfigs(android.view.View view) {
+        if (this.timerPresenter.verifyFields()) {
+            //TODO: startAcitvy
+        }
     }
 }
