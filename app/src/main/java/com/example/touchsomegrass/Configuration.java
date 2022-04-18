@@ -14,7 +14,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import presenters.ConfigurationContract;
 import presenters.ConfigurationPresenter;
 
-public class Configuration extends AppCompatActivity implements ConfigurationContract.ConfigurationView {
+public class Configuration extends BaseActivity implements ConfigurationContract.ConfigurationView {
     private ConfigurationContract.ConfigurationPresenter configurationPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,6 +3,7 @@ package com.example.touchsomegrass;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import presenters.ConfigurationContract;
 import presenters.ConfigurationPresenter;
@@ -18,9 +19,11 @@ public class Timer extends AppCompatActivity implements ContractTimer.TimerView 
 
     }
 
-
     @Override
     public void changeState() {
 
+    }
+
+    public void openConfigurations(View view) {
     }
 }
