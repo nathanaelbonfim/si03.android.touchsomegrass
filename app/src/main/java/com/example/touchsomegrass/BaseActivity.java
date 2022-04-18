@@ -17,7 +17,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
     }
 
-        public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
 
@@ -27,12 +27,16 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        Intent intent;
+
         switch (item.getItemId()) {
             case R.id.menu_activity_presentation:
-                startActivity(new Intent(this, Presentation.class));
+                intent = new Intent(this, Presentation.class);
+                startActivity(intent);
                 return true;
             case R.id.menu_activity_configuration:
-                startActivity(new Intent(this, Configuration.class));
+                intent = new Intent(this, Configuration.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onContextItemSelected(item);

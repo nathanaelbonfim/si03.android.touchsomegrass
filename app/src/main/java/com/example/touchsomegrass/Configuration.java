@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import presenters.TimerContract;
 import presenters.TimerPresenter;
 
-public class Configuration extends AppCompatActivity implements TimerContract.TimerView {
+public class Configuration extends BaseActivity implements TimerContract.TimerView {
     private TimerContract.TimerPresenter timerPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
