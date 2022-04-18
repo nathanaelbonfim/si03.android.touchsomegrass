@@ -6,23 +6,21 @@ import android.os.Bundle;
 
 import presenters.ConfigurationContract;
 import presenters.ConfigurationPresenter;
+import presenters.ContractTimer;
+import presenters.TimerPresenter;
 
-public class Timer extends AppCompatActivity implements ConfigurationContract.ConfigurationView {
-    private ConfigurationContract.ConfigurationPresenter configurationPresenter = new ConfigurationPresenter();
+public class Timer extends AppCompatActivity implements ContractTimer.TimerView {
+    private ContractTimer.TimerPresenter timerPresenter = new TimerPresenter();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
-        configurationPresenter.setView(this);
-    }
-
-    @Override
-    public void showError(String error) {
 
     }
 
+
     @Override
-    public void showSucesss() throws Exception {
+    public void changeState() {
 
     }
 }

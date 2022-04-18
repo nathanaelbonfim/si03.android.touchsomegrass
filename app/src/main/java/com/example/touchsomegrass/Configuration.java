@@ -2,6 +2,7 @@ package com.example.touchsomegrass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -97,7 +98,8 @@ public class Configuration extends AppCompatActivity implements ConfigurationCon
 
     public void saveConfigs(android.view.View view) {
         if (this.configurationPresenter.verifyFields()) {
-            //TODO: startAcitvy
+            Intent intent = new Intent(Configuration.this, Timer.class);
+            startActivity(intent);
         }
     }
 }

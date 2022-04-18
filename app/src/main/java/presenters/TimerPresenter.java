@@ -6,10 +6,7 @@ import models.Timer;
 
 public class TimerPresenter implements ContractTimer.TimerPresenter {
     private int time;
-    Timer timer;
-    public TimerPresenter(Timer timer) {
-        this.timer = timer;
-    }
+    Timer timer =  Timer.getInstance();
 
     @Override
     public int getTime() {

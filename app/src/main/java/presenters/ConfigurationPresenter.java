@@ -4,7 +4,7 @@ import models.Timer;
 
 public class ConfigurationPresenter implements ConfigurationContract.ConfigurationPresenter {
     private ConfigurationContract.ConfigurationView view;
-    private Timer timer;
+    private Timer timer = Timer.getInstance();
 
 
     @Override
@@ -46,4 +46,5 @@ public class ConfigurationPresenter implements ConfigurationContract.Configurati
         boolean isCorrect = this.timer.getInterval() != 0 && this.timer.getTimeToActive() != 0 && this.timer.getName() != null;
         return isCorrect;
     }
+
 }

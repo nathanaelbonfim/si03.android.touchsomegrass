@@ -2,6 +2,8 @@ package presenters;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import models.Timer;
+
 public interface ConfigurationContract {
     interface ConfigurationView {
         void showError(String error);
