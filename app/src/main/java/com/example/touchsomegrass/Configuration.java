@@ -1,27 +1,26 @@
 package com.example.touchsomegrass;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.View;
 import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import presenters.TimerContract;
-import presenters.TimerPresenter;
+import presenters.ConfigurationContract;
+import presenters.ConfigurationPresenter;
 
-public class Configuration extends BaseActivity implements TimerContract.TimerView {
-    private TimerContract.TimerPresenter timerPresenter;
+public class Configuration extends AppCompatActivity implements ConfigurationContract.ConfigurationView {
+    private ConfigurationContract.ConfigurationPresenter configurationPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.timerPresenter = new TimerPresenter();
-        this.timerPresenter.setView(this);
+        this.configurationPresenter = new ConfigurationPresenter();
+        this.configurationPresenter.setView(this);
         setContentView(R.layout.activity_configuration);
         TextInputLayout layoutName = findViewById(R.id.configuration_name);
         EditText inputName = findViewById(R.id.input_name);
@@ -38,7 +37,7 @@ public class Configuration extends BaseActivity implements TimerContract.TimerVi
             @Override
             public void afterTextChanged(Editable s) {
                 Log.i("Configuration", "" + s);
-                timerPresenter.setName(s.toString());
+                configurationPresenter.setName(s.toString());
             }
         });
         inputMessage.addTextChangedListener(new TextWatcher() {
@@ -54,7 +53,7 @@ public class Configuration extends BaseActivity implements TimerContract.TimerVi
 
             @Override
             public void afterTextChanged(Editable s) {
-                timerPresenter.setMessage(s.toString());
+                configurationPresenter.setMessage(s.toString());
             }
         });
         inputInterval.addTextChangedListener(new TextWatcher() {
@@ -70,7 +69,7 @@ public class Configuration extends BaseActivity implements TimerContract.TimerVi
 
             @Override
             public void afterTextChanged(Editable s) {
-                timerPresenter.setInterval(s.toString());
+                configurationPresenter.setInterval(s.toString());
             }
         });
         inputTimeToActive.addTextChangedListener(new TextWatcher() {
@@ -84,7 +83,7 @@ public class Configuration extends BaseActivity implements TimerContract.TimerVi
 
             @Override
             public void afterTextChanged(Editable s) {
-                timerPresenter.setMessage(s.toString());
+                configurationPresenter.setMessage(s.toString());
             }
         });
     }
@@ -98,8 +97,9 @@ public class Configuration extends BaseActivity implements TimerContract.TimerVi
     }
 
     public void saveConfigs(android.view.View view) {
-        if (this.timerPresenter.verifyFields()) {
-            //TODO: startAcitvy
+        if (this.configurationPresenter.verifyFields()) {
+            Intent intent = new Intent(Configuration.this, Timer.class);
+            startActivity(intent);
         }
     }
 }

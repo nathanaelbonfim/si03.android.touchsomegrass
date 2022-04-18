@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Timer {
+    private static Timer instance;
     private String message;
     private int interval;
     private int timeToActive;
@@ -59,5 +60,10 @@ public class Timer {
         TimeToActiveOptions.put(2, 30);
     }
 
-
+    public static Timer getInstance() {
+        if (instance == null) {
+            instance = new Timer();
+        }
+        return instance;
+    }
 }
