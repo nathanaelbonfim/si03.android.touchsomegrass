@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style
         name="button_primary"
         parent="Widget.MaterialComponents.Button"
@@ -31,6 +31,10 @@
         <item name="hintTextColor">@color/accent</item>
     </style>
 
+    <style name="timer_container">
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
     <style name="timer_item">
         <item name="fontWeight">600</item>
         <item name="android:textSize">80dp</item>
@@ -43,4 +47,24 @@
         >
         <item name="android:textColor">@color/primary</item>
     </style>
+
+    <style name="timer_logo_break">
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
+    <style name="additional_info_container">
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
+    <style name="timer_additional_info_name">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/timer_font_name</item>
+    </style>
+
+    <style name="timer_additional_info_message">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/timer_font_message</item>
+    </style>
+
 </resources>

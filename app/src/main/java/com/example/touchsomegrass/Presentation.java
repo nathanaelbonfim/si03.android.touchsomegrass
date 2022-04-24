@@ -16,6 +16,10 @@ public class Presentation extends BaseActivity {
         setContentView(R.layout.activity_presentation);
     }
 
+    /**
+     * Abre a tela de configuração de parâmetros
+     * @param v
+     */
     public void openConfigurations(View v) {
         startActivity(new Intent(Presentation.this, Configuration.class));
     }

@@ -46,7 +46,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_interval"
-            style="@style/input_dropdown"
+            style="@style/input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/configuration_interval_label">
@@ -55,13 +55,13 @@
                 android:id="@+id/input_interval"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
+                android:inputType="number"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_break"
-            style="@style/input_dropdown"
+            style="@style/input_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/configuration_break_label">
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/input_break"
-                android:inputType="none"
+                android:inputType="number"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <RelativeLayout

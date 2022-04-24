@@ -2,6 +2,7 @@ package com.example.touchsomegrass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,6 +25,11 @@ public class Timer extends AppCompatActivity implements ContractTimer.TimerView 
 
     }
 
+    /**
+     * Abre a tela de configuração de parâmetros
+     * @param view
+     */
     public void openConfigurations(View view) {
+        startActivity(new Intent(this, Configuration.class));
     }
 }

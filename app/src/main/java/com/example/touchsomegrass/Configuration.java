@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -96,10 +97,10 @@ public class Configuration extends BaseActivity implements ConfigurationContract
     public void showSucesss() throws Exception {
     }
 
-    public void saveConfigs(android.view.View view) {
-        if (this.configurationPresenter.verifyFields()) {
-            Intent intent = new Intent(Configuration.this, Timer.class);
-            startActivity(intent);
-        }
+    public void saveConfigs(View view) {
+        Intent intent = new Intent(this, Timer.class);
+        startActivity(intent);
+//        if (this.configurationPresenter.verifyFields()) {
+//        }
     }
 }

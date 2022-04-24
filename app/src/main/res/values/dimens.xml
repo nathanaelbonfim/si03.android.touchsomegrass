@@ -3,4 +3,8 @@
     <dimen name="default_padding">22dp</dimen>
     <dimen name="default_margin">10dp</dimen>
     <dimen name="element_gap">10dp</dimen>
+    <dimen name="timer_font_name">20dp</dimen>
+    <dimen name="timer_font_message" />
+    <dimen name="default_radius">6dp</dimen>
+    <dimen name="default_stroke">1dp</dimen>
 </resources>

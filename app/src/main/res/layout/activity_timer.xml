@@ -12,18 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:showDividers="middle"
         >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_horizontal"
-            android:padding="@dimen/default_padding"
-            android:background="@color/primary"
-            android:layout_marginBottom="@dimen/element_gap"
-            />
-
         <LinearLayout
+            android:id="@+id/timer_container"
+            style="@style/timer_container"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,6 +56,41 @@
                 android:layout_height="wrap_content"
                 android:text="00"
                 style="@style/timer_item"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/timer_break_logo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/timer_logo_break"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_horizontal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/additional_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/additional_info_container"
+            >
+            <TextView
+                android:id="@+id/timer_additional_info_name"
+                style="@style/timer_additional_info_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                />
+
+            <TextView
+                android:id="@+id/timer_additional_info_message"
+                style="@style/timer_additional_info_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uma mensagem bonita pra caramba aqui nessa tela. Não pode ser muito grande."
                 />
         </LinearLayout>
         <RelativeLayout
