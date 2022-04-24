@@ -12,9 +12,6 @@
         android:id="@+id/menu_activity_timer"
         android:title="@string/activity_timer_title" />
     <item
-        android:id="@+id/menu_activity_break"
-        android:title="@string/activity_break_title" />
-    <item
         android:id="@+id/menu_activity_about"
         android:title="@string/activity_about_title" />
 </menu>

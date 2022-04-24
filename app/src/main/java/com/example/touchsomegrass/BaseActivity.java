@@ -36,9 +36,14 @@ public class BaseActivity extends AppCompatActivity {
                 intent = new Intent(this, Configuration.class);
                 startActivity(intent);
                 return true;
+            case R.id.menu_activity_timer:
+                intent = new Intent(this, Timer.class);
+                startActivity(intent);
+                return true;
             case R.id.menu_activity_about:
                 intent = new Intent(this, About.class);
                 startActivity(intent);
+                return true;
             default:
                 return super.onContextItemSelected(item);
         }
