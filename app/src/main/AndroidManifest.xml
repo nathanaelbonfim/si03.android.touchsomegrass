@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TouchSomeGrass">
         <activity
-            android:name=".Timer"
-            android:label="@string/activity_timer_title"
+            android:name=".About"
             android:exported="false" />
+        <activity
+            android:name=".Timer"
+            android:exported="false"
+            android:label="@string/activity_timer_title" />
         <activity
             android:name=".Configuration"
             android:exported="false"

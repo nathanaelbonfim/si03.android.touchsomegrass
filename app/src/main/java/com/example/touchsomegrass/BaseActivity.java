@@ -25,10 +25,8 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+    public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
-
         switch (item.getItemId()) {
             case R.id.menu_activity_presentation:
                 intent = new Intent(this, Presentation.class);
@@ -38,6 +36,9 @@ public class BaseActivity extends AppCompatActivity {
                 intent = new Intent(this, Configuration.class);
                 startActivity(intent);
                 return true;
+            case R.id.menu_activity_about:
+                intent = new Intent(this, About.class);
+                startActivity(intent);
             default:
                 return super.onContextItemSelected(item);
         }
