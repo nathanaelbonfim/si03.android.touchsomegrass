@@ -11,7 +11,7 @@ import presenters.ConfigurationPresenter;
 import presenters.ContractTimer;
 import presenters.TimerPresenter;
 
-public class Timer extends AppCompatActivity implements ContractTimer.TimerView {
+public class Timer extends BaseActivity implements ContractTimer.TimerView {
     private ContractTimer.TimerPresenter timerPresenter = new TimerPresenter();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
