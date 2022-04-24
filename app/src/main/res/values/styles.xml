@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="base_activity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dark</item>
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
     <style
         name="button_primary"
         parent="Widget.MaterialComponents.Button"
@@ -66,5 +73,6 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/timer_font_message</item>
     </style>
+
 
 </resources>
