@@ -1,5 +1,7 @@
 package presenters;
 
+import android.util.Log;
+
 import models.Timer;
 
 public class ConfigurationPresenter implements ConfigurationContract.ConfigurationPresenter {
@@ -11,6 +13,8 @@ public class ConfigurationPresenter implements ConfigurationContract.Configurati
     public void setMessage(String message) {
         if (message.length() > 12) {
             this.view.showError("Mensagem grande demais");
+        } else {
+            this.timer.setMessage(message);
         }
     }
 
@@ -18,6 +22,8 @@ public class ConfigurationPresenter implements ConfigurationContract.Configurati
     public void setName(String name) {
         if (name.length() < 2) {
             this.view.showError("Nome invalido");
+        } else {
+            this.timer.setName(name);
         }
     }
 
@@ -43,7 +49,11 @@ public class ConfigurationPresenter implements ConfigurationContract.Configurati
 
     @Override
     public boolean verifyFields() {
-        boolean isCorrect = this.timer.getInterval() != 0 && this.timer.getTimeToActive() != 0 && this.timer.getName() != null;
+        boolean isCorrect = this.timer.getInterval() != 0 &&
+                this.timer.getTimeToActive() != 0
+                && this.timer.getName() != null;
+
+        Log.i("TESTE", isCorrect + "");
         return isCorrect;
     }
 

@@ -27,6 +27,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
+        models.Timer timer = models.Timer.getInstance();
         switch (item.getItemId()) {
             case R.id.menu_activity_presentation:
                 intent = new Intent(this, Presentation.class);
@@ -37,7 +38,13 @@ public class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.menu_activity_timer:
-                intent = new Intent(this, Timer.class);
+                Boolean definedInterval = timer.getInterval() != 0;
+
+                if (!definedInterval) {
+                    intent = new Intent(this, Configuration.class);
+                } else {
+                    intent = new Intent(this, Timer.class);
+                }
                 startActivity(intent);
                 return true;
             case R.id.menu_activity_about:

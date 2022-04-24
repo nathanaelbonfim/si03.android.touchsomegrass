@@ -37,7 +37,6 @@ public class Configuration extends BaseActivity implements ConfigurationContract
             }
             @Override
             public void afterTextChanged(Editable s) {
-                Log.i("Configuration", "" + s);
                 configurationPresenter.setName(s.toString());
             }
         });
@@ -84,7 +83,7 @@ public class Configuration extends BaseActivity implements ConfigurationContract
 
             @Override
             public void afterTextChanged(Editable s) {
-                configurationPresenter.setMessage(s.toString());
+                configurationPresenter.setTimeToActive(s.toString());
             }
         });
     }
@@ -98,9 +97,9 @@ public class Configuration extends BaseActivity implements ConfigurationContract
     }
 
     public void saveConfigs(View view) {
-        Intent intent = new Intent(this, Timer.class);
-        startActivity(intent);
-//        if (this.configurationPresenter.verifyFields()) {
-//        }
+        if (this.configurationPresenter.verifyFields()) {
+            Intent intent = new Intent(this, Timer.class);
+            startActivity(intent);
+        }
     }
 }
