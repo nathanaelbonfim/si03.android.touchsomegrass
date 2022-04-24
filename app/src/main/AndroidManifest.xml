@@ -11,7 +11,8 @@
         android:theme="@style/Theme.TouchSomeGrass">
         <activity
             android:name=".About"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/activity_about_title"/>
         <activity
             android:name=".Timer"
             android:exported="false"
