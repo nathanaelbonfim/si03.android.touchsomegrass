@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/drawable/dev_nathanael.xml" value="0.1565" />
         <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/drawable/ic_launcher_background.xml" value="0.262" />
         <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/drawable/rounded_corners.xml" value="0.1" />
-        <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/layout/activity_about.xml" value="0.11907894736842105" />
+        <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/layout/activity_about.xml" value="0.18355263157894736" />
         <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/layout/activity_configuration.xml" value="0.11907894736842105" />
         <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/sheld/AndroidStudioProjects/TouchSomeGrass/app/src/main/res/layout/activity_presentation.xml" value="0.11907894736842105" />

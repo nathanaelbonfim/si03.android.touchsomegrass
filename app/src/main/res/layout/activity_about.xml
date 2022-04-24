@@ -5,4 +5,100 @@
     style="@style/base_activity"
     tools:context=".About">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+        <LinearLayout
+            android:id="@+id/about_developer_container"
+            style="@style/about_section">
+            <TextView
+                android:id="@+id/about_developer_title"
+                style="@style/default_title"
+                android:text="@string/about_developers_section_title"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/developer_cards_container"
+                style="@style/about_developer_cards_container"
+                >
+
+                <!-- Card Nathanael -->
+                <LinearLayout
+                    android:id="@+id/about_card_dev_nathanael"
+                    style="@style/about_developer_card"
+                    android:layout_alignLeft="@id/about_card_dev_vinicius"
+                    android:layout_alignParentLeft="true"
+                    >
+
+                    <ImageView
+                        style="@style/about_dev_photo"
+                        android:src="@drawable/dev_nathanael"
+                        android:id="@+id/dev_nathanael_photo"
+                        />
+
+                    <TextView
+                        style="@style/about_developer_card_title"
+                        android:text="@string/about_dev_nathanael_name" />
+
+                    <TextView
+                        style="@style/about_developer_card_register"
+                        android:text="@string/about_dev_nathanael_ra" />
+                </LinearLayout>
+
+                <!-- Card Vinicius -->
+                <LinearLayout
+                    android:id="@+id/about_card_dev_vinicius"
+                    style="@style/about_developer_card"
+                    android:layout_alignParentRight="true"
+                    >
+                    <ImageView
+                        style="@style/about_dev_photo"
+                        android:src="@drawable/dev_vinicius"
+                        android:id="@+id/dev_vinicius_photo"
+                        />
+
+                    <TextView
+                        style="@style/about_developer_card_title"
+                        android:text="@string/about_dev_vinicius_name" />
+
+                    <TextView
+                        style="@style/about_developer_card_register"
+                        android:text="@string/about_dev_vinicius_ra" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/about_project_container"
+            style="@style/about_section">
+            <TextView
+                android:id="@+id/about_project_title"
+                style="@style/default_title"
+                android:text="@string/about_project_section_title"
+                />
+            <TextView
+                style="@style/about_text"
+                android:text="@string/about_project_text"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/about_version_container"
+            style="@style/about_section">
+            <TextView
+                android:id="@+id/about_version_title"
+                style="@style/default_title"
+                android:text="@string/about_version_section_title"
+                />
+            <TextView
+                style="@style/about_text"
+                android:text="2.0.1\n\nBuild: 24-04-2022 20h00"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

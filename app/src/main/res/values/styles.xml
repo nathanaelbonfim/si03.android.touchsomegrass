@@ -14,6 +14,10 @@
     </style>
 
     <style name="default_title" parent="default_horizontal_container">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/timer_font_title</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
     </style>
 
     <style
@@ -87,7 +91,44 @@
         <item name="android:textSize">@dimen/timer_font_message</item>
     </style>
 
-    <style name="about_section" parent="default_horizontal_container"></style>
+    <style name="about_section" parent="default_horizontal_container">
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="about_developer_cards_container" parent="default_horizontal_container">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="about_developer_card" parent="default_horizontal_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="about_developer_card_title" parent="default_horizontal_container">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/timer_font_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="about_developer_card_register" parent="about_developer_card_title">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="about_dev_photo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+    </style>
+
+    <style name="about_text" parent="timer_additional_info_message">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
 
+    <dimen name="timer_font_title">20dp</dimen>
 </resources>
