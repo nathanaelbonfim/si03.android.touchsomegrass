@@ -22,8 +22,7 @@
         <TextView
             android:id="@+id/presentation_text"
             android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/default_horizontal_container"
             android:text="@string/presentation_introduction"
             />
 
@@ -35,8 +34,6 @@
 
         <Button
             android:id="@+id/presentation_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/presentation_button"
             android:onClick="openConfigurations"
             style="@style/button_primary"

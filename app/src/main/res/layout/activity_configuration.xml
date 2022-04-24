@@ -13,14 +13,10 @@
         >
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="@string/configuration_name_label"
             style="@style/input_text">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/input_name"
                 style="@style/input_text"
                 />
@@ -28,14 +24,10 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="@string/configuration_message_label"
             style="@style/input_text">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/input_message"
                 style="@style/input_text"
                 />
@@ -44,14 +36,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_interval"
             style="@style/input_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="@string/configuration_interval_label">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_interval"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/default_horizontal_container"
                 android:inputType="number"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -59,15 +48,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/configuration_break"
             style="@style/input_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="@string/configuration_break_label">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/input_break"
                 android:inputType="number"
+                style="@style/default_horizontal_container"
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <RelativeLayout
@@ -78,8 +64,6 @@
 
         <Button
             android:id="@+id/presentation_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/configuration_save_button"
             android:onClick="saveConfigs"
             style="@style/button_primary"

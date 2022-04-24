@@ -7,10 +7,21 @@
         <item name="android:padding">@dimen/default_padding</item>
     </style>
 
+    <!-- Estilo Base para elementos horizontais -->
+    <style name="default_horizontal_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="default_title" parent="default_horizontal_container">
+    </style>
+
     <style
         name="button_primary"
         parent="Widget.MaterialComponents.Button"
         >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="backgroundTint">@color/accent</item>
     </style>
 
@@ -18,6 +29,8 @@
         name="input_text"
         parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/element_gap</item>
         <item name="boxBackgroundColor">@color/primary</item>
         <item name="android:textColorHint">@color/white</item>
@@ -73,6 +86,8 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/timer_font_message</item>
     </style>
+
+    <style name="about_section" parent="default_horizontal_container"></style>
 
 
 </resources>
