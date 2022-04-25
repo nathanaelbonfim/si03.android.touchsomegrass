@@ -79,7 +79,6 @@
                 style="@style/timer_additional_info_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hello,"
                 />
 
             <TextView
@@ -87,7 +86,6 @@
                 style="@style/timer_additional_info_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Uma mensagem bonita pra caramba aqui nessa tela. Não pode ser muito grande."
                 />
         </LinearLayout>
         <RelativeLayout

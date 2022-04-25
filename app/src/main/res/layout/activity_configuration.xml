@@ -45,17 +45,17 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/configuration_break"
-            style="@style/input_text"
-            android:hint="@string/configuration_break_label">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/configuration_break"-->
+<!--            style="@style/input_text"-->
+<!--            android:hint="@string/configuration_break_label">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_break"
-                android:inputType="number"
-                style="@style/default_horizontal_container"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/input_break"-->
+<!--                android:inputType="number"-->
+<!--                style="@style/default_horizontal_container"-->
+<!--                />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"

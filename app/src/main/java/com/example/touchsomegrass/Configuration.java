@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -23,11 +24,9 @@ public class Configuration extends BaseActivity implements ConfigurationContract
         this.configurationPresenter = new ConfigurationPresenter();
         this.configurationPresenter.setView(this);
         setContentView(R.layout.activity_configuration);
-        TextInputLayout layoutName = findViewById(R.id.configuration_name);
         EditText inputName = findViewById(R.id.input_name);
         EditText inputMessage = findViewById(R.id.input_message);
         EditText inputInterval = findViewById(R.id.input_interval);
-        EditText inputTimeToActive = findViewById(R.id.input_break);
         inputName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -72,20 +71,6 @@ public class Configuration extends BaseActivity implements ConfigurationContract
                 configurationPresenter.setInterval(s.toString());
             }
         });
-        inputTimeToActive.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                configurationPresenter.setTimeToActive(s.toString());
-            }
-        });
     }
 
     @Override
@@ -94,6 +79,29 @@ public class Configuration extends BaseActivity implements ConfigurationContract
 
     @Override
     public void showSucesss() throws Exception {
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+//        this.setDefinedValues();
+    }
+
+    /**
+     * Busca os valores do model e define na tela, para quando o usuário
+     * voltar de outra tela.
+     */
+    public void setDefinedValues() {
+        models.Timer timer = models.Timer.getInstance();
+
+        TextView inputName = (TextView) findViewById(R.id.input_name);
+        TextView inputMessage = (TextView) findViewById(R.id.input_message);
+        TextView inputInterval = (TextView) findViewById(R.id.input_interval);
+
+        inputName.setText(timer.getName() == null ? timer.getName() : "");
+        inputMessage.setText(timer.getMessage() == null ? timer.getMessage() : "");
+        inputInterval.setText(timer.getInterval() == 0 ? Integer.toString(timer.getInterval()) : "");
     }
 
     public void saveConfigs(View view) {

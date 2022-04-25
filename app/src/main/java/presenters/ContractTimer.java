@@ -11,5 +11,6 @@ public interface ContractTimer {
         public int getHours();
         public int getSeconds();
         public void init();
+        public boolean isFinished();
     }
 }
